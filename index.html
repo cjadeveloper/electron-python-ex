@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LLamando a Python desde Electron!</title>
+</head>
+
+<body>
+    <h1>Calculadora Python: Usando
+        <a href="https://pypi.org/project/simplecalculator/">simplecalculator</a>
+    </h1>
+    <p>Escriba algo como <code>1 + 1</code>.</p>
+    <input type="text" id="input" value="1 + 1"></input>
+    <input type="button" id="btn" value="Enviar a Python!"></input>
+    <br><br>
+    Resultado: <span id="result"></span>
+
+    <script src="./renderer.js"></script>
+
+</body>
+
+</html>

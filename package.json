@@ -1,0 +1,19 @@
+{
+  "name": "electron-py-example",
+  "version": "1.0.0",
+  "description": "Connecting Python 3 and Electron",
+  "main": "main.js",
+  "scripts": {
+    "dev": "poetry shell && npm start",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Cristian Javier Azulay",
+  "license": "MIT",
+  "dependencies": {
+    "python-shell": "^2.0.2"
+  },
+  "devDependencies": {
+    "electron": "^10.1.2"
+  }
+}

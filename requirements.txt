@@ -1,0 +1,2 @@
+simplecalculator==0.0.4 \
+    --hash=sha256:1d862b52bc21305ef7633e59be71aae233905c51846b8775b66afb0104fa6110

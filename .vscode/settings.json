@@ -1,0 +1,30 @@
+{
+    /*
+    Example of .env file defined on project root
+    --------------------------------------------
+    # .env for Windows
+    PYTHON_INSTALL_LOC=%USERPROFILE%/anaconda3/envs/dbf2sql/python.exe # Windows path
+    # .env for Linux
+    PYTHON_INSTALL_LOC="/home/python36/python"
+    */
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.terminal.activateEnvironment": false,
+    "python.formatting.provider": "black",
+    "python.sortImports.path": "isort",
+    "editor.formatOnSave": true,
+    "[python]": {
+        /* "pythonPath": "/home/cjadeveloper/.cache/pypoetry/virtualenvs/dbf2sql-KbwSSi5Q-py3.8/bin/python", */
+        /* https://github.com/Microsoft/vscode-python/issues/1883#issuecomment-395216906 */
+        "editor.formatOnPaste": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    /* https://flakehell.readthedocs.io/ide.html#ide-integration */
+    "cornflakes.linter.executablePath": "flake8hell",
+    "cornflakes.linter.run": "onType",
+    "licenser.author": "Cristian Javier Azulay",
+    "licenser.license": "MIT",
+    "licenser.projectName": "Electron Python Example",
+    "licenser.disableAutoHeaderInsertion": true
+}
