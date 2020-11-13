@@ -2,16 +2,20 @@
   "name": "electron-py-example",
   "version": "1.0.0",
   "description": "Connecting Python 3 and Electron",
-  "main": "main.js",
+  "main": "public/js/main.js",
   "scripts": {
-    "dev": "poetry shell && npm start",
+    "buildcss": "postcss vendor/tailwind.css -o public/css/taildwind.css",
+    "dev": "poetry shell && npm run start",
     "start": "electron ."
   },
   "keywords": [],
   "author": "Cristian Javier Azulay",
   "license": "MIT",
   "dependencies": {
-    "python-shell": "^2.0.2"
+    "python-shell": "^2.0.2",
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
     "electron": "^10.1.2"

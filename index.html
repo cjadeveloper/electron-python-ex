@@ -4,19 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>LLamando a Python desde Electron!</title>
+    <link rel="stylesheet" href="public/css/taildwind.css">
+    <link rel="stylesheet" href="public/css/custom.css">
 </head>
 
-<body>
-    <h1>Calculadora Python: Usando
-        <a href="https://pypi.org/project/simplecalculator/">simplecalculator</a>
-    </h1>
-    <p>Escriba algo como <code>1 + 1</code>.</p>
-    <input type="text" id="input" value="1 + 1"></input>
-    <input type="button" id="btn" value="Enviar a Python!"></input>
-    <br><br>
-    Resultado: <span id="result"></span>
+<body class="bg-red-100">
+    <div class="container mx-auto px-4 text-gray-800 text-xl">
+        <h1 class="my-4 text-center font-semibold text-3xl text-gray-900">Calculadora Python: usando
+            <a class="no-underline hover:underline text-blue-500" href="https://pypi.org/project/simplecalculator/">
+                simplecalculator
+            </a>
+        </h1>
+        <p class="py-2">Escriba algo como <code>1 + 1</code>.</p>
+        <input class="border-blue-300 rounded py-2" type="text" id="input" value="1 + 1"></input>
+        <!-- <input class="" type="button" value="Enviar a Python!"></input> -->
+        <button id="btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Calcular
+        </button>
+        Resultado: <span id="result"></span>
+    </div>
 
-    <script src="./renderer.js"></script>
+    <script src="public/js/app.js"></script>
 
 </body>
 
